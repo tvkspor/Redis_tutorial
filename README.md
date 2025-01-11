@@ -95,3 +95,72 @@ redis-server
 ```
 ### Picter after succesfull instaltion
 ![Redis Installation](Image/redis2.png)
+
+## 3: Redis Data Management
+
+Redis is a key-based data structure and falls into the category of databases called "Key-Value stores." Data in Redis is stored and accessed via unique keys, and each piece of data is stored as a key-value pair. 
+
+### Key Features:
+- **Key-Value Pairs**: Redis stores data in pairs, where each key is unique and associated with a value.
+- **Data Types**: The value associated with a key can be different types, including:
+  - **String**
+  - **List**
+  - **Hash**
+  - **Set**
+  - And more...
+
+### Important Notes:
+- **Exact Key Required**: Data can only be retrieved if you know the exact key used to store it.
+- **Flexibility**: Redis offers flexibility in managing data. You can create your own access schema based on the needs of your application.
+
+### Basic Redis Commands:
+- `$ set <key> <value>`: Used to store a value associated with a key.
+- `$ get <key>`: Used to retrieve the value associated with a key.
+- `$ del <key>`: Used to delete a key and its associated value.
+
+### Example:
+
+```bash
+# Set a value for a key
+$ set user:1000 "John Doe"
+
+# Get the value associated with the key
+$ get user:1000
+"John Doe"
+
+# Delete the key
+$ del user:1000
+```
+### Define Keys with Expiration
+
+In Redis, you can set keys with an expiration time, meaning that the key will automatically expire and be deleted after a certain period. This can be useful for session management, caching, or time-limited data storage.
+
+#### Setting Keys with Expiration
+
+You can set a key with an expiration time using the following commands:
+
+- `$ set <key> <value> EX <seconds>`: Sets the key with a value and specifies the expiration time in seconds.
+- `$ set <key> <value> PX <milliseconds>`: Sets the key with a value and specifies the expiration time in milliseconds.
+
+Alternatively, you can set the expiration of an existing key using the `expire` or `pexpire` commands:
+
+- `$ expire <key> <seconds>`: Sets the expiration time in seconds for an existing key.
+- `$ pexpire <key> <milliseconds>`: Sets the expiration time in milliseconds for an existing key.
+
+#### Example:
+
+```bash
+# Set a key with an expiration time of 60 seconds
+$ set session:12345 "user_data" EX 60
+
+# Set a key with an expiration time of 5000 milliseconds (5 seconds)
+$ set session:67890 "user_data" PX 5000
+
+# Set expiration for an existing key (in seconds)
+$ expire session:12345 30
+
+# Set expiration for an existing key (in milliseconds)
+$ pexpire session:67890 10000
+
+
+
