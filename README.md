@@ -93,5 +93,5 @@ After installation, start the Redis Server and use the following commands to ver
 redis-server
 
 ```
-### Ảnh khi cài đặt thành công
+### Picter after succesfull instaltion
 ![Redis Installation](Image/redis2.png)
