@@ -4,6 +4,7 @@
 1. [Introduction to Redis](#1-introduction-to-redis)
 2. [Installation and Basic Setup](#2-installation-and-basic-setup)
 3. [Redis Data Management](#3-redis-data-management)
+4. [Data Type in Redis](#4-data-type-in=redis)
 
 ---
 
@@ -196,7 +197,7 @@ Redis provides the concept of key spaces, which act like separate databases or n
 ### Important Notes:
 You cannot connect key in different space
 
-## 4:Data Type in Redis
+## 4: Data Type in Redis
 ### Redis Data Types
 
 Redis is a versatile in-memory data structure store, supporting multiple data types for different use cases. Each data type is optimized for specific operations, enabling Redis to be highly efficient and flexible.
