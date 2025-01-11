@@ -2,6 +2,8 @@
 
 ## 1. Giới thiệu cơ bản về Redis
 
+![Redis Overview](Image/redis1.png)
+
 ### Redis là gì?
 Redis (viết tắt của **Remote Dictionary Server**) là một cơ sở dữ liệu **In-Memory** mã nguồn mở, hiệu suất cao. Nó thường được sử dụng như một cơ sở dữ liệu **NoSQL**, bộ nhớ đệm (**cache**), message broker, hoặc queue. Redis hỗ trợ nhiều tính năng nổi bật như:
 
