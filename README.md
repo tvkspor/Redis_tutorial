@@ -197,6 +197,20 @@ Redis provides the concept of key spaces, which act like separate databases or n
 You cannot connect key in different space
 
 ## 4:Data Type in Redis
+### Redis Data Types
 
+Redis is a versatile in-memory data structure store, supporting multiple data types for different use cases. Each data type is optimized for specific operations, enabling Redis to be highly efficient and flexible.
 
+---
 
+| Data Type       | Description                             | Use Cases                  |
+|------------------|-----------------------------------------|----------------------------|
+| **String**       | Simple key-value pair                  | Caching, counters          |
+| **List**         | Ordered collection of strings          | Message queues             |
+| **Set**          | Unordered collection of unique strings | Membership, tagging        |
+| **Hash**         | Map of key-value pairs                 | User profiles              |
+| **Sorted Set**   | Set with scores for sorting            | Leaderboards               |
+| **Bitmap**       | Bit-level operations on strings        | Real-time tracking         |
+| **HyperLogLog**  | Approximate unique counting            | Unique visitor analytics   |
+| **Stream**       | Append-only log for real-time data     | Event streaming            |
+| **Geospatial**   | Geolocation data                      | Location-based services    |
