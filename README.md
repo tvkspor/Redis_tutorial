@@ -4,7 +4,7 @@
 1. [Introduction to Redis](#1-introduction-to-redis)
 2. [Installation and Basic Setup](#2-installation-and-basic-setup)
 3. [Redis Data Management](#3-redis-data-management)
-4. [Data Type in Redis](#4-data-type-in=redis)
+4. [Data Type in Redis](#4-data-type-in-redis)
 
 ---
 
