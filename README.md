@@ -90,3 +90,6 @@ Sau khi cài đặt, khởi chạy Redis Server và thực hiện các câu lệ
 
 ```bash
 redis-server
+```
+### Ảnh khi cài đặt thành công
+![Redis Installation](Image/redis2.png)
