@@ -162,5 +162,42 @@ $ expire session:12345 30
 # Set expiration for an existing key (in milliseconds)
 $ pexpire session:67890 10000
 
+```
+### Key Spaces in Redis
+
+Redis provides the concept of key spaces, which act like separate databases or namespaces. This feature allows logical segregation of data, enabling you to use the same key names in different key spaces without conflict. By default, Redis starts with a single key space (index `0`), but you can configure and use multiple key spaces.
+
+---
+
+#### Key Features:
+
+1. **Isolation**:  
+   Each key space operates independently, meaning keys in one key space do not affect keys in another.
+
+2. **Same Key Name**:  
+   You can use the same key name in different key spaces. For example, `user:100` can exist in both key space `0` and key space `1` with different values.
+
+3. **Key Space Index**:  
+   - Redis key spaces are indexed numerically, starting from `0`.  
+   - By default, Redis is configured with 16 key spaces (`databases=16` in the configuration file), but this can be adjusted in the Redis configuration.
+
+4. **Management**:  
+   You can switch between key spaces, list keys, or clear all keys in a specific key space.
+
+---
+
+#### Redis Configuration for Key Spaces
+
+The number of available key spaces can be defined in the Redis configuration file (`redis.conf`):
+```bash
+select index
+keys specifiacations
+flushdb
+
+```
+
+```plaintext
+databases 16
+
 
 
