@@ -188,16 +188,15 @@ Redis provides the concept of key spaces, which act like separate databases or n
 
 #### Redis Configuration for Key Spaces
 
-The number of available key spaces can be defined in the Redis configuration file (`redis.conf`):
-```bash
-select index
-keys specifiacations
-flushdb
+- `$ select <index>`: Used to state which space you want to use.
+- `$ keys <key>`: Used to get all keys in one space.
+- `$ flushdb`: Used to delete all keys.
+- `$ unlink <key>`: Used to delete key asynchonursly
 
-```
+### Important Notes:
+You cannot connect key in different space
 
-```plaintext
-databases 16
+## 4:Data Type in Redis
 
 
 
