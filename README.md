@@ -1,5 +1,9 @@
 # Hướng dẫn sử dụng Redis từ cơ bản đến nâng cao
 
+## Menu
+1. [Giới thiệu cơ bản về Redis](#1-giới-thiệu-cơ-bản-về-redis)
+2. [Cài đặt và setup cơ bản](#2-cài-đặt-và-setup-cơ-bản)
+
 ## 1. Giới thiệu cơ bản về Redis
 
 ![Redis Overview](Image/redis1.png)
@@ -74,4 +78,15 @@ Redis (viết tắt của **Remote Dictionary Server**) là một cơ sở dữ 
 
 ---
 
-Phần 2 sẽ tiếp tục hướng dẫn cách cài đặt Redis và các thao tác cơ bản.
+## 2. Cài đặt và setup cơ bản
+
+### Hướng dẫn cài đặt
+Bạn có thể tìm kiếm các nguồn tài liệu từ Internet để cài đặt Redis. Một số tài nguyên phổ biến:
+- [Redis Official Documentation](https://redis.io/documentation)
+- [Redis GitHub Repository](https://github.com/redis/redis)
+
+### Xác nhận cài đặt
+Sau khi cài đặt, khởi chạy Redis Server và thực hiện các câu lệnh dưới đây để xác nhận cài đặt thành công:
+
+```bash
+redis-server
